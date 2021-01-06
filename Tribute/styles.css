@@ -2,7 +2,13 @@ h1, h2{
     text-align: center;
 }
 
-p {
+article {
     display: block;
     margin: 0px 150px 0px 150px;
+    border-color: blue;
+    border-style: groove;
+    border-width: 5px;
+}
+p {
+    margin: 15px;
 }
