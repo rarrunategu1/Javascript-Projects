@@ -1,16 +1,30 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
 h1, h2{
     text-align: center;
 }
+h2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
 article {
+    background-color: white;
     display: block;
     margin: 0px 150px 0px 150px;
-    border-color: blue;
+    border-color: red;
     border-style: groove;
     border-width: 5px;
 }
 p {
     margin: 15px;
+    font-size: 15pt;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .center {
     display: block;
