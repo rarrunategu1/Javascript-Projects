@@ -32,7 +32,7 @@ p {
     max-width: 400px;
     margin: 0 auto;
     border-radius: 50%;
-}     
+}    
 .image {
     display: block;
     width: 100%;
@@ -40,16 +40,77 @@ p {
 }
 .overlay {
     position: absolute;
+    margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
     width: 100%;
+   /* transform: rotate(-45deg);*/
     opacity: 0;
-    transition: .3s ease;
-    background-color: red;
+   /* transition: 1s ease-in;*/
+   animation-name: bigtolittle, sway;
+   animation-duration: 30s, 31s;
+   animation-timing-function: ease;
   }
+  .overlay:before {
+      content: "\01F496";
+      
+      
+
+  }
+  .overlay:after {
+    content: "\01F496";
+     
+    
+}
+
   .container:hover .overlay {
     opacity: 1;
-  }  
+  }
+  @keyframes sway {
+      0% {
+          transform: rotateZ(-15deg) rotateX(55deg);
+      }
+      30% {
+		transform: rotateZ(20deg) rotateX(60deg);
+		animation-timing-function: ease-in-out;
+	}
+	60% { 
+		transform: rotateZ(-20deg) rotateX(55deg);
+		animation-timing-function: ease-in-out;
+	}
+    100% {
+		transform: rotateZ(0deg) rotateX(58deg);
+		animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);
+		}
+}
+@keyframes bigtolittle { 
+	0% {
+        content: "\01F496"; 
+		font-size: 36px;
+	}
+	50% {
+        content: "\01F496";
+		font-size: 48px;
+    }
+    100% {
+        content: "\01F496";
+        font-size: 72px;
+    }
+}
+  
+    
+    
+    
+
+ 
+
+
+ 
+    
+    
+
+
+  
