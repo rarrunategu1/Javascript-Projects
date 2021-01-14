@@ -35,7 +35,10 @@ p {
 .image {
     display: block;
     width: 100%;
-    height: auto;       
+    height: auto;
+    border: solid; 
+    border-color: black;
+    border-width: 20px;      
 }
 .hearts {
     position: absolute;
