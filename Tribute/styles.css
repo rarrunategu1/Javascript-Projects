@@ -22,8 +22,8 @@ article {
 p {
     margin: 15px;
     font-size: 15pt;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .container {
     position: relative;
@@ -76,7 +76,7 @@ p {
 		animation-timing-function: ease-in-out;
 	}
     100% {
-		transform: rotateZ(-10deg) rotateX(0deg);
+		transform: rotateZ(-7deg) rotateX(0deg);
 		animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);
 		}
 }
